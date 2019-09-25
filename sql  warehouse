@@ -1,0 +1,36 @@
+create table warehouse2(
+item_number varchar(20),
+item_description varchar(20),
+shelve_number varchar(20),
+quantity_in_stock int
+primary key (shelve_number)
+
+);
+insert into warehouse2( item_number, item_description, shelve_number, quantity_in_stock ) VALUES ('A101','Apple', 'a22', '1000')
+insert into warehouse2( item_number, item_description, shelve_number, quantity_in_stock ) VALUES ('A102','samsung', 'a32', '1000')
+insert into warehouse2( item_number, item_description, shelve_number, quantity_in_stock ) VALUES ('A103','oppo', 'a42', '1000')
+insert into warehouse2( item_number, item_description, shelve_number, quantity_in_stock ) VALUES ('A104','vivo', 'a52', '1000')
+insert into warehouse2( item_number, item_description, shelve_number, quantity_in_stock ) VALUES ('A105','zeus', 'a262', '1000')
+insert into warehouse2( item_number, item_description, shelve_number, quantity_in_stock ) VALUES ('A106','mi', 'a72', '1000')
+insert into warehouse2( item_number, item_description, shelve_number, quantity_in_stock ) VALUES ('A107','macbook', 'a82', '1000')
+
+select * from warehouse2
+
+
+create table truck(
+truck_number varchar(20),
+driver_name varchar(20),
+order_number varchar(20),
+
+primary key (order_number),
+
+);
+insert into truck ( truck_number, driver_name, order_number) VALUES ('pb05','lovepreet', 'c7870')
+insert into truck ( truck_number, driver_name, order_number) VALUES ('pb06','prabhjot', '9643')
+insert into truck ( truck_number, driver_name, order_number) VALUES ('pb35','jagtaar', '3762')
+insert into truck ( truck_number, driver_name, order_number) VALUES ('pb02','sidhu', 'thanedar')
+insert into truck ( truck_number, driver_name, order_number) VALUES ('pb11','kirat', '0007')
+insert into truck ( truck_number, driver_name, order_number) VALUES ('pb06','amar', 'c870')
+
+
+select * from truck
